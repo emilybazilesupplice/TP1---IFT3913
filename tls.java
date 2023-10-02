@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
                   // https://stackoverflow.com/questions/1320476/execute-another-jar-in-a-java-program/40544510#40544510
+                  // et Manifest: https://www.developer.com/java/java-jar-manifest-file/
     public static void main(String[] args) {
         // test pour verifier si on a un fichier et un chemin d'acces comme arguments
         // if (args.length > 0) {// verification qu'un dossier a bien été entré
