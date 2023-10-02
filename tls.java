@@ -66,7 +66,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
             // tassert.
             int loc = tloc(fichier);
             int compteurAssert = tassert(fichier);
-            double tcmp = (double) loc / compteurAssert;
+            double tcmp = (double) loc / compteurAssert; // retourne Infinity qu'on peut considerer comme 0
 
             // Récupère les informations sur le fichier et le paquet.
             String cheminFichier = "./"
@@ -98,7 +98,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre total de lignes dans un fichier.
     public static int tloc(File fichier) throws IOException, InterruptedException {
-        String command = "java -jar chemin\vers\le\fichier/jar "
+        String command = "java -jar C:\\Users\\User\\Desktop\\temp\\IFT3913\\TP1---IFT3913\\tloc.jar "
                 + fichier.getAbsolutePath();
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
@@ -119,7 +119,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre d'assertions dans un fichier de test.
     public static int tassert(File fichier) throws IOException, InterruptedException {
-        String command = "java -jar chemin\vers\le\fichier.jar "
+        String command = "java -jar C:\\Users\\User\\Desktop\\temp\\IFT3913\\TP1---IFT3913\\tassert.jar "
                 + fichier.getAbsolutePath();
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
