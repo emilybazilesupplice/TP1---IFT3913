@@ -85,7 +85,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
     }
 
     // Extraction du nom de paquet si présent
-    private static String extraireNomPaquet(File fichier) throws IOException {
+    static String extraireNomPaquet(File fichier) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(fichier))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -99,7 +99,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre total de lignes dans un fichier.
     public static int tloc(File fichier) throws IOException, InterruptedException {
-        String command = "java -jar C:\\Users\\User\\Desktop\\temp\\IFT3913\\TP1---IFT3913\\tloc.jar "
+        String command = "java -jar chemin\\menant\\au\\tloc.jar "
                 + fichier.getAbsolutePath();
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
@@ -120,7 +120,7 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre d'assertions dans un fichier de test.
     public static int tassert(File fichier) throws IOException, InterruptedException {
-        String command = "java -jar C:\\Users\\User\\Desktop\\temp\\IFT3913\\TP1---IFT3913\\tassert.jar "
+        String command = "java -jar chemin\\\\menant\\\\au\\tassert.jar "
                 + fichier.getAbsolutePath();
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
