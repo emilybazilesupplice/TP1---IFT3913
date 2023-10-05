@@ -29,24 +29,19 @@ public class tassert {
         
         String ligne;
         int n = 0;
-        String assert_check;
         while((ligne = read.readLine()) != null) {
             ligne = ligne.trim();
 
-            // Va chercher une ligne qui appel une fonction
-            if (ligne.startsWith("public static void")){
-                // Vérifie si c'est un assert
-                for (int i = 0; i < typeAssert.size(); i++) {
-                    assert_check = typeAssert.get(i);
-                    if (ligne.contains(assert_check)){
-                        // On augmente le compte
-                        n = n + 1;
-                    }
-                  }
+            // vérifie si la ligne contient un assert
+            for (String assert_check : typeAssert) {
+                if (ligne.contains(assert_check)){
+                    n++;
+                }
             }
         }
 
         read.close();
+        System.out.println(n);
 
     }
 }

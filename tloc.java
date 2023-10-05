@@ -46,6 +46,6 @@ public class tloc {
         }
 
         read.close();
-
+        System.out.println(n);
     }
 }
