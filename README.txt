@@ -1,6 +1,6 @@
 Équipe:
     1. Emily Bazile-Supplice ()
-    2. ...
+    2. Eed Flory Jean-Baptiste (20168335)
 
 Lien du repositioire ->
 
