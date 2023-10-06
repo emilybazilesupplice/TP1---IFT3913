@@ -4,23 +4,24 @@
 
 Lien du repositioire ->
 
-Instruction pour compiler:
+Instruction pour compiler et executer:
 
-Compilez avant chaque utilisation :
+Compilez avant chaque execution :
 
 1- Compiler : javac tassert.java
-Execution --> java tassert chemin/du/fichier/de/test
+Executer --> java tassert <chemin-au-fichier-de-test>
 
 2- Compiler: javac tloc.java
-Execution-->java tloc chemin/du/fichier/de/test
+Executer-->java tloc <chemin-au-fichier-de-test>
 
 3- Compiler: javac tls.java
---->remplacer "java -jar chemin\\menant\\au\\fichier.jar" par les chemins respectifs des fichiers.jar dans les methodes tloc et tassert :
-String command = "java -jar chemin\\menant\\au\\tloc.jar" 
-String command = "java -jar chemin\\menant\\au\\tassert.jar"
+--->remplacer "java -jar <chemin-au-fichier.jar>" par les chemins respectifs des fichiers.jar dans les methodes tloc et tassert :
+String command = "java -jar <chemin-à-tloc.jar>" 
+String command = "java -jar <chemin-à-tassert.jar>"
 
-Execution->java tls chemin/du/dossier/contenant/les/fichiers/de/test
+Executer->java tls <chemin-au-dossier-contenant-les-fichiers-de-test>
 
 4- Compiler: javac tropcomp.java
-Execution--> java tropcomp chemin/du/dossier/contenant/les/fichiers/de/test seuil
-
+Executer--> java tropcomp <chemin-au-dossier-contenant-les-fichiers-de-test seuil>
+Si on veut generer des fichiers 
+Executer--> java tropcomp -o <chemin-à-la-sortie.csv> <chemin-de-l'entrée> <seuil>.
