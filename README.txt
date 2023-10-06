@@ -2,7 +2,7 @@
     1. Emily Bazile-Supplice ()
     2. Eed Flory Jean-Baptiste (20168335)
 
-Lien du repositioire ->
+Lien du repositioire -> https://github.com/emilybazilesupplice/TP1---IFT3913
 
 Instruction pour compiler et executer:
 
@@ -22,6 +22,7 @@ String command = "java -jar <chemin-à-tassert.jar>"
 Executer->java tls <chemin-au-dossier-contenant-les-fichiers-de-test>
 
 4- Compiler: javac tropcomp.java
+Si on veut visionner les resultats dans le terminal
 Executer--> java tropcomp <chemin-au-dossier-contenant-les-fichiers-de-test seuil>
-Si on veut generer des fichiers 
+Si on veut generer des fichiers csv
 Executer--> java tropcomp -o <chemin-à-la-sortie.csv> <chemin-de-l'entrée> <seuil>.
