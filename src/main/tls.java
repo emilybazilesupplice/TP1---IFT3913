@@ -99,7 +99,11 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre total de lignes dans un fichier.
     public static int tloc(File fichier) throws IOException, InterruptedException {
+<<<<<<< HEAD
         String command = "java -jar chemin-au-fichier-tloc.jar "
+=======
+        String command = "java -jar chemin\\menant\\au\\tloc.jar "
+>>>>>>> bfb4ad49316995858e957fb5d4a3b2cf4dbc9f2f
                 + fichier.getAbsolutePath();
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
@@ -120,9 +124,14 @@ public class tls {// on peut utiliser Process et Runtime.getRuntime. Source:
 
     // Compte le nombre d'assertions dans un fichier de test.
     public static int tassert(File fichier) throws IOException, InterruptedException {
+<<<<<<< HEAD
         String command = "java -jar chemin-au-fichier-tassert.jar "
                 + fichier.getAbsolutePath();
 
+=======
+        String command = "java -jar chemin\\\\menant\\\\au\\tassert.jar "
+                + fichier.getAbsolutePath();
+>>>>>>> bfb4ad49316995858e957fb5d4a3b2cf4dbc9f2f
         Process process = Runtime.getRuntime().exec(command);
         process.waitFor();
 

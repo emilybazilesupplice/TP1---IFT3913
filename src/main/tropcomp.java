@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+package main;
+
+>>>>>>> bfb4ad49316995858e957fb5d4a3b2cf4dbc9f2f
 import java.io.*;
 import java.util.*;
 
@@ -8,6 +13,7 @@ public class tropcomp {
             System.out.println("Veuillez fournir le chemin du projet et le seuil.");
             return;
         }
+<<<<<<< HEAD
         String cheminSortie = null;
         String cheminDuProjet;
         double seuil;
@@ -20,6 +26,10 @@ public class tropcomp {
             cheminDuProjet = args[0];
             seuil = Double.parseDouble(args[1]);
         }
+=======
+        String cheminDuProjet = args[0];
+        double seuil = Double.parseDouble(args[1]);
+>>>>>>> bfb4ad49316995858e957fb5d4a3b2cf4dbc9f2f
 
         File dossier = new File(cheminDuProjet);
         if (!dossier.isDirectory()) {
@@ -36,6 +46,7 @@ public class tropcomp {
         int nombreClassesASuggerer = (int) Math.ceil(classes.size() * seuil / 100); // Calcul du nombre de classes à
                                                                                     // suggérer basé sur le seuil. on le
                                                                                     // veut en pourcentage
+<<<<<<< HEAD
 
         if (cheminSortie != null) {
             try (PrintWriter writer = new PrintWriter(new File(cheminSortie))) {
@@ -55,6 +66,12 @@ public class tropcomp {
                         classe.cheminFichier, classe.nomPaquet, classe.nomClasse,
                         classe.tloc, classe.tassert, classe.tcmp);
             }
+=======
+        for (int i = 0; i < nombreClassesASuggerer; i++) {// Affichage des classes
+            ClasseTest classe = classes.get(i);
+            System.out.printf("%s, %s, %s, %d, %d, %.2f%n", classe.cheminFichier, classe.nomPaquet, classe.nomClasse,
+                    classe.tloc, classe.tassert, classe.tcmp);
+>>>>>>> bfb4ad49316995858e957fb5d4a3b2cf4dbc9f2f
         }
     }
 

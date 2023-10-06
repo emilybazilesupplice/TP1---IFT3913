@@ -1,0 +1,14 @@
+Utilité de tropcomp :
+tropcomp est utile car il détecte des morceaux de code qui pourraient être considérés comme trop complexes,
+en se basant sur certaines métriques comme le nombre de lignes de code (tloc) , nombre de assertions JUnit (tassert).
+Concernant le temps d'éxécution en testant les fichiers test de JFreechart, on peut remarquer qu'à un seuil de 1%, 5% et 10%, 
+le temps pris pour générer les reponses sont de 3 minutes, 2 minutes et 3 minutes (environ)respectivement.
+
+Efficacité de l'heuristique :
+
+Il semble identifier certains codes tests complexes, mais cela dépend de la manière dont on définit "complexe".Par exemple se fier uniquement
+au nombre de lignes de code (tloc comme métrique) peut ne pas capturer toute la complexité réelle.
+Deux programmes peuvent avoir le même tloc (nombre total de lignes), mais l'un peut être plus complexe que l'autre en fonction de la logique interne, 
+de la manière dont les conditions sont imbriquées, de la manière dont les boucles sont structurées, etc.
+
+Améliorations possibles : ???
