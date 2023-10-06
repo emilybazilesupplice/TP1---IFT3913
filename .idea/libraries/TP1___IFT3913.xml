@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TP1---IFT3913">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tloc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tassert.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
