@@ -4,7 +4,9 @@
 
 Lien du repositioire -> https://github.com/emilybazilesupplice/TP1---IFT3913
 
+
 Instruction pour compiler et executer:
+Assurez-vous d'avoir Java JDK 17.0.5 ou plus installé sur votre ordinateur ( l'utilisation de javac)
 
 Compilez avant chaque execution :
 
